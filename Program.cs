@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var intStack = new Stack<int>(10);  
+        intStack.Push(10); 
+        intStack.Push(23);
+
+        var number = intStack.Pop();
+        Console.WriteLine(number); 
     }
 }
